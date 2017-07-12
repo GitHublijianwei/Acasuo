@@ -1,0 +1,121 @@
+
+     <header>
+       <div class="black_nav">
+         <div class="container-fluid">
+          <div class="row">
+             <div class="col-lg-12 col-md-12">
+               <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-12">
+                  <div class="nav_phone text-center">
+                     <a href="#script"><i class="icon-phone"></i>400-8232-520 </a>
+                     <span>|</span>
+                     <a href="#script"> 在线咨询（10:00-23:00）</a>
+                  </div>
+               </div>
+               <div class="black_con col-lg-6 col-lg-offset-1 col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                 <ul class="center-block black_nav">
+                   <li class="gold"><a href="#script">iphone7免费领<span>|</span></a></li>
+                   <li class="gold"><a href="#script">分享送5元红包<span>|</span></a></li>
+                   <li><a href="#script">企业用户<span>|</span></a></li>
+                   <li><a href="#script">学习资源<span>|</span></a></li>
+                   <li><a href="#script">学习论坛<span>|</span></a></li>
+                   <li><a href="#script">水平自测</a></li>
+                 </ul>
+               </div>
+             </div>
+          </div>
+         </div>
+       </div>
+       <!-- 黑色结束 -->
+       <!-- 绝对定位导航 -->
+<div class="fixed">
+  <div class="container-fluid">
+  <div class="row">
+     <div class="col-lg-11 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12">
+        <div class="logo_ba col-lg-3  col-md-2 col-sm-3 col-xs-5">
+           <div class="logo text-center">
+             <a href="#script"><img src="images/header/logo.png" alt=""></a>
+           </div>
+        </div>
+        <div class="nav_all col-lg-6  col-md-7 col-sm-8 col-xs-10">
+           <nav class="navbar-default">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="images/header/logo.png" alt=""></a>
+              <button type="button" class="navbar-toggle collapsed head_but" data-target="#divNav" aria-expanded="false"  data-toggle="collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="divNav">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html" id="index">首页</a></li>
+                <li><a href="study.html" id="study">学习体系 <span class="sr-only">(current)</span></a></li>
+                <li><a href="boutique.html" id="butique">精品课程</a></li>
+                <li><a href="combo.html" id="combo">套餐体系</a></li>
+                <li><a href="team.html" id="team">外教团队</a></li>
+                <li><a href="#">雅思托福</a></li>
+                <li><a href="#">美国小学</a></li>
+              </ul>
+            </div>
+           </nav>
+        </div>
+<!--         <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0"> -->
+          <div class="login">
+          <div class="user_none">
+              <button type="button" class="btn btn-danger"><i class="icon-hand-right"></i>免费领取外教课</button>
+                <button type="button" class="btn btn-success"><i class="icon-user"></i>登陆</button>
+            </div>
+              <p class="user_name"> </p>
+            </div>
+        </div>
+     </div>
+  </div>
+  </div>
+<!-- </div> -->
+
+        <div class="broadside">
+            <ul>
+              <li>
+                <img src="images/header/sead_1_0.gif" alt="">
+                <p>联系<br>客服</p>
+              </li>
+              <li>
+              <div class="to_top">
+                <img src="images/header/sead_4.gif" alt="">
+              </div>
+              </li>
+            </ul>
+        </div>
+      <script type="text/javascript">
+          $(function(){
+            $('#divNav ul li').mouseover(function(){
+              $(this).addClass('nav_hov').siblings().removeClass('nav_hov')
+            })
+            $('#divNav ul li').mouseout(function(){
+               $('#divNav ul li').removeClass('nav_hov')
+            });
+            $(window).scroll(function(){
+              var i=$('body').scrollTop();
+              if(i>165){
+                $('.fixed').css('position','fixed');
+                $('.fixed').css('top','0');
+              }else{
+                $('.fixed').css('position','relative');
+                // $('.fixed').css('top','0');
+              }
+            })
+          })
+            $(document).scroll(function(e) {
+                 var i=$(document).scrollTop()
+                if(i>165){
+                  $('.broadside').animate({'top':i+300+'px'},50);
+                }
+                });
+              $('.to_top').click(function(){
+                $(document).scrollTop('0px')
+              })
+            
+
+        </script>
+     </header>
